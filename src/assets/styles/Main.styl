@@ -1,0 +1,46 @@
+Main
+    width: calc(100vw - 100px)
+    min-height: calc(100vh - 60px)
+    background: #F9F9F9
+    box-sizing: border-box
+    padding: 25px
+    position: absolute
+    margin-top:60px
+    margin-left: 80px
+
+.Main__grid
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+
+    @media (max-width:1250px)
+        grid-template-columns: repeat(3, 1fr)
+
+    @media (max-width:950px)
+        grid-template-columns: repeat(2, 1fr)
+    
+    @media (max-width:700px)
+        grid-template-columns: 1fr
+    &--news
+        border-top: 5px solid #E0E0E0
+        border-bottom: 5px solid #E0E0E0
+        margin-bottom: 20px
+        & h2 
+            font-size: 20px
+            font-weight: 700
+            line-height: 24px
+
+h3 
+    font-size: 14px
+    line-height: 20px
+    color: 030303
+
+.Main__video img 
+    cursor: pointer
+
+.Main__video--description
+    display: grid
+    grid-template-columns: 50px 1fr
+    justify-content: center
+    margin-bottom: 30px
+    & .pic
+        margin: 14px auto

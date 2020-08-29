@@ -1,0 +1,182 @@
+header 
+    position: fixed
+    z-index 5
+
+.Nav
+    width: 100vw
+    height 60px
+    background: white
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.Nav__logo
+    display: flex
+    width: 20%
+    align-items: center
+
+.Burger
+    margin-right: 20px
+    margin-left: 30px
+    cursor: pointer
+
+.Logo
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    cursor pointer
+
+.Logo svg
+    width: 100px
+
+.Logo span
+    color: #606060
+    font-size: 10px
+    margin-left: 1px
+    align-self: flex-start
+
+.Nav__search
+    display: flex
+    width: 650px
+    box-sizing: border-box
+
+.Nav input 
+    padding: 8px 12px
+    width: 550px
+    height 35px
+    box-sizing: border-box
+    border: 1px solid #CCCCCC
+
+.search img 
+    height 40%
+
+    
+.search
+    width: 80px
+    height 35px
+    background: #F0F0F0
+    display: flex
+    justify-content: center
+    align-items: center
+    box-sizing: border-box
+    border: 1px solid #CCCCCC
+    cursor pointer
+
+
+.Nav__icons
+    width: 20%
+    display: flex
+    justify-content: space-around
+    margin-right: 30px
+    & .dropdownBtn 
+        cursor pointer
+
+.dropdown 
+    position: absolute
+    background: #fff
+    border 1px #E5E5E5
+    border-style none solid solid solid 
+    width: 200px
+
+.dropdown--md
+    width: 300px
+    right: 250px
+
+.crear
+    width: 25px
+
+.notificaciones
+    width: 500px
+    height 620px
+    right 150px
+    overflow-y: scroll
+    scrollbar-width: thin
+    scrollbar-color: #E0E0E0 #fff 
+    &::-webkit-scrollbar 
+        width: 8px
+    &::-webkit-scrollbar-thumb
+        background-color: #E0E0E0
+
+.notificaciones__head
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #E5E5E5
+    & h3 
+        margin-left: 16px
+        font-weight: 200
+        font-size: 16px
+    & div svg 
+        width: 24px
+        margin-right: 16px
+
+
+.notificaciones__videos
+    display flex
+    flex-direction: column
+    justify-content: center
+    align-items: center 
+
+.notificaciones__video
+    display flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center 
+    width: 100%
+    & .pic
+        margin-right: 20px
+        margin-left: 20px
+        width: 40px
+        height 40px
+
+    & .notificaciones__video--text
+        width: 300px
+        & p
+            font-size: 14px
+        & p:last-of-type
+            font-size: 12px;
+            font-weight: 100;
+            color: #7A7B7B;
+    &:hover .notificaciones__video--more
+        display: block
+
+.notificaciones__video--more
+    display: none
+    position: relative;
+    top: -13px
+
+.profile
+    width: 300px
+    height 630px
+    right: 50px
+    & h3 
+        margin: 0;
+        font-size: 15px;
+        color: #494949
+    & span:first-of-type
+        margin-bottom: 8px
+        font-size: 14px
+        display inline-block
+    & span:last-of-type
+        display: inline-block
+        font-size: 14px
+        color: #065FD4
+    & .Aside__active--buttons svg
+        margin-left: 15px
+    &__info
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+        align-items: center
+        width: 100%
+        padding-top: 15px
+        border-bottom: 1px solid #E5E5E5
+        padding-bottom: 20px
+        & div .pic
+            width 38px
+            height 38px
+            margin-left: 15px
+            margin-right: 15px
+            margin-top: -25px
